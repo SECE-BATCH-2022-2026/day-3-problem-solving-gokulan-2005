@@ -6,12 +6,12 @@ class Main{
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
-		int r = usermaincode.calculatesum(a,b,c);
+		int r = UserMainCode.calculateSum(a,b,c);
 		System.out.println(r);
 	}
 }
-class usermaincode{
-	public static Integer calculatesum(Integer a,Integer b,Integer c){
+class UserMainCode{
+	public static Integer calculateSum(Integer a,Integer b,Integer c){
 		if (a==13 && b==13 && c==13){
 			return 0;
 		}
@@ -21,8 +21,7 @@ class usermaincode{
 			}
 			else{
 				return c;
-			}
-			
+			}	
 		}
 		else if (b==13){
 			return a;
